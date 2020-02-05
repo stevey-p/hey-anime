@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
 import Head from '../components/head';
-import Nav from '../components/nav';
 
 const Home = () => {
   const [date, setDate] = useState(null);
@@ -18,10 +16,9 @@ const Home = () => {
   return (
     <div>
       <Head title="Hey, Anime!" />
-      <Nav />
 
       <div className="hero">
-        <h1 className="title">Welcome to Next!</h1>
+        <h1 className="title">Hey, Anime!</h1>
       </div>
 
       <style jsx>{`
