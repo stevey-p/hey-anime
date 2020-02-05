@@ -1,9 +1,10 @@
 {
-  "name": "create-next-example-app",
-  "description": "A Next.js starter app.",
+  "name": "heyanime.show",
+  "private": true,
+  "description": "Website for the live-action, unanimated podcast series 'Hey, Anime!'",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zeit/now/tree/master/examples/nextjs"
+    "url": "https://github.com/stevey-p/hey.anime"
   },
   "license": "MIT",
   "scripts": {
