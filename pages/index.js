@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Head from '../components/head';
 
 const Home = () => {
@@ -10,32 +10,33 @@ const Home = () => {
         <img className="banner-logo" src="/logo.svg" />
       </div>
 
-      <div className="row">
+      <div className="copy-content">
         <p className="copy">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Welcome! You've reached the (future) splash page of a podcast project called <strong>Hey, Anime!</strong> We've already started recording, although we haven't published any episodes just yet. When we do, of course we'll start begging all our friends to tell all their friends about it in our quest for The Most Internet Clout.&trade; Although truth be told this is essentially an excuse for us to chat excitedly about things we enjoy watching, so while we say we hope you enjoy it we mostly mean we hope <em>we</em> enjoy making it.
         </p>
+
+        <p className="copy">But we hope you do enjoy it too. A little.</p>
       </div>
 
       <style jsx>{`
         .hero {
           width: 100%;
-          color: #333;
-          background-color: #f1f1f1;
+          background-color: #4AA6DB;
           text-align: center;
         }
         .banner-logo {
-          width: 20%;
           padding-top: 180px;
+          margin-bottom: -53px;
         }
         .title {
           text-align: center;
           font-family: 'Righteous', cursive;
         }
-        .row {
+        .copy-content {
           max-width: 880px;
           margin: 80px auto 40px;
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
           justify-content: space-around;
         }
         .copy {
