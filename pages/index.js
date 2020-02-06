@@ -50,7 +50,18 @@ const Home = () => {
         .copy ::first-word {
           font-weight: bold;
         }
-      `}</style>
+
+        @media all and (max-width: 699px) {
+          .hero {
+            background-size: cover;
+            height: 100px;
+          }
+          .banner-logo {
+            padding-top: 0;
+            margin-bottom: -160px;
+          }
+        }
+      `}</style> 
     </div>
   );
 };
