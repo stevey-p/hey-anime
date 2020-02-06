@@ -23,10 +23,14 @@ const Home = () => {
           width: 100%;
           background-color: #4AA6DB;
           text-align: center;
+          background-image: url('anime-banner.jpg');
+          background-position: center;
+          background-repeat: no-repeat;
         }
         .banner-logo {
-          padding-top: 180px;
+          padding-top: 280px;
           margin-bottom: -53px;
+          max-width: 90%;
         }
         .title {
           text-align: center;
