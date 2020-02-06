@@ -7,7 +7,7 @@ const Home = () => {
       <Head title="[Hey, Anime!] - Home" />
 
       <div className="hero">
-        <h1 className="title">Hey, Anime!</h1>
+        <img className="banner-logo" src="/logo.svg" />
       </div>
 
       <div className="row">
@@ -21,15 +21,11 @@ const Home = () => {
           width: 100%;
           color: #333;
           background-color: #f1f1f1;
+          text-align: center;
         }
-        .title {
-          margin: 0;
-          width: 25%;
+        .banner-logo {
+          width: 20%;
           padding-top: 180px;
-          line-height: 1.15;
-          font-size: 48px;
-          margin: 0 auto;
-          white-space: nowrap;
         }
         .title {
           text-align: center;
