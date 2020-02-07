@@ -7,7 +7,7 @@ const Home = () => {
       <Head title="[Hey, Anime!] - Home" />
 
       <div className="hero">
-        <img className="banner-logo" src="/logo.svg" />
+        <img className="banner-logo" src="/logo.svg" alt="" />
       </div>
 
       <div className="copy-content">
@@ -37,15 +37,14 @@ const Home = () => {
           font-family: 'Righteous', cursive;
         }
         .copy-content {
-          max-width: 880px;
           margin: 80px auto 40px;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
         }
         .copy {
           font-family: 'Karla', sans-serif;
           line-height: 2.25;
+          max-width: 90%;
+          width: 880px;
+          margin: 15px auto;
         }
         .copy ::first-word {
           font-weight: bold;

@@ -29,7 +29,7 @@ const Head = props => (
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
-    <link href="https://fonts.googleapis.com/css?family=Righteous|Karla&display=swap" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet"></link>
     <style>{`
       body {
         background-color: #D8E1E9;
