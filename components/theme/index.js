@@ -9,7 +9,8 @@ export const colors = {
 };
 
 export const fonts = {
-    
+    fontFamily: "'Karla', sans-serif",
+    lineHeight: '2.25'
 }
 
 export default { colors, fonts };
