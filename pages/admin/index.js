@@ -1,6 +1,6 @@
 import React from 'react';
 import AdminLayout from '../../components/layout/admin';
-import { useAuth } from 'use-auth0-hooks';
+import { useAuth, withAuth, withLoginRequired } from 'use-auth0-hooks';
 import { useRouter } from 'next/router';
 
 const AdminHome = () => {
@@ -46,4 +46,6 @@ const Card = (props) => {
   </div>;
 }
 
-export default AdminHome;
+export default withLoginRequired(
+  withAuth(AdminHome)
+);
