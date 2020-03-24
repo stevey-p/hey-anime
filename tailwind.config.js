@@ -1,6 +1,9 @@
 // https://tailwindcss.com/docs/configuration/
 module.exports = {
     theme: {
+        container: {
+            center: true,
+        },
         fontFamily: {
             display: ['Karla', 'sans-serif'],
             body: ['Karla', 'sans-serif'],
