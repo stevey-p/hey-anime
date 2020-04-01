@@ -1,5 +1,6 @@
 import { Auth0Provider } from 'use-auth0-hooks';
 import Router from 'next/router';
+import SigningIn from './signing-in';
 
 // just fuckin with this guide: https://auth0.com/blog/ultimate-guide-nextjs-authentication-auth0/
 // trying to make a simple provider for an admin section of the site
@@ -37,22 +38,6 @@ const onRedirectCallback = appState => {
       }
     })
   };
-  
-  /**
-   * When redirecting to the login page you'll end up in this state where the login page is still loading.
-   * You can render a message to show that the user is being redirected.
-   */
-  const onRedirecting = () => {
-    return (
-      <div>
-        <h1>Signing you in</h1>
-        <p>
-          In order to access this page you will need to sign in.
-          Please wait while we redirect you to the login page...
-        </p>
-      </div>
-    );
-  };
 
 const Provider = (props) => {
     const { children } = props;
@@ -62,7 +47,7 @@ const Provider = (props) => {
         redirectUri={process.env.REDIRECT_URI}
         onRedirectCallback={onRedirectCallback}
         onAccessTokenError={onAccessTokenError}
-        onRedirecting={onRedirecting}
+        onRedirecting={SigningIn}
         onLoginError={onLoginError}
     >
         {children}
