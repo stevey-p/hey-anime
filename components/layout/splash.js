@@ -6,9 +6,8 @@ function Layout(props) {
     return (
         <div className="layout-splash">
             <Head title={props.title} />
-            <div className="hero">
-                <img className="banner-logo" src="/logo.svg" alt="Hey, Anime!" />
-            </div>
+            <div className="hero" />
+            <img className="banner-logo" src="/logo.svg" alt="Hey, Anime!" />
             {props.children}
             <style jsx global>
                 {globalStyles}
@@ -16,16 +15,16 @@ function Layout(props) {
             <style jsx>{`
                 .hero {
                     width: 100%;
+                    height: 280px;
                     background-color: ${colors.accent};
                     text-align: center;
                     background-image: url('anime-banner.jpg');
                     background-position: center;
                     background-repeat: no-repeat;
-                    margin-bottom: 80px;
+                    margin-bottom: -64px;
                 }
                 .banner-logo {
-                    padding-top: 280px;
-                    margin-bottom: -53px;
+                    margin: 0 auto;
                     max-width: 90%;
                 }
 
