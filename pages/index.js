@@ -1,6 +1,6 @@
 import React from 'react';
 import SplashLayout from '../components/layout/splash';
-import { fonts } from '../components/theme';
+import { colors } from '../components/theme';
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
           Welcome! You've reached the (future) splash page of a podcast project called <strong>Hey, Anime!</strong> We've already started recording, although we haven't published any episodes just yet. When we do, of course we'll start begging all our friends to tell all their friends about it in our quest for The Most Internet Clout.&trade; Although truth be told this is essentially an excuse for us to chat excitedly about things we enjoy watching, so while we say we hope you enjoy it we mostly mean we hope <em>we</em> enjoy making it.
         </p>
 
-        <p className="copy">But we hope you do enjoy it too. A little.</p>
+        <p className="copy">But we hope you do enjoy it too. A little. You can check out our <a href="https://heyanime.cast.rocks/">pilot episode here.</a></p>
       </div>
 
       <style jsx>{`
@@ -23,6 +23,10 @@ const Home = () => {
           max-width: 90%;
           width: 880px;
           margin: 15px auto;
+        }
+
+        .copy a {
+          color: ${colors.accent}
         }
       `}</style> 
     </SplashLayout>
