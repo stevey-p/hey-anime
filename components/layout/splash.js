@@ -32,10 +32,7 @@ function Layout(props) {
                     .hero {
                       background-size: cover;
                       height: 100px;
-                    }
-                    .banner-logo {
-                      padding-top: 0;
-                      margin-bottom: -160px;
+                      margin-bottom: -44px;
                     }
                 }
             `}</style>
